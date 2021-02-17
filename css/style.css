@@ -1,0 +1,344 @@
+/* Null-settings*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.menu .menu-button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  text-shadow: 1px 1px 1px #8989cf;
+}
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.menu {
+  position: fixed;
+  z-index: 21;
+  height: 50px;
+  min-height: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: aquamarine;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.menu .menu-button {
+  margin: auto 20px;
+  position: flex-inline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10%;
+  margin: auto 20px;
+  background-color: aquamarine;
+}
+
+.menu .now-button {
+  color: red;
+  font-size: 25px;
+}
+
+.timelane-progs-wrapper {
+  position: absolute;
+}
+
+.timelane-progs-wrapper .timelane {
+  position: fixed;
+  z-index: 4;
+  width: 1920px;
+  opacity: 1;
+  height: 50px;
+  background-color: darkgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 50px;
+  margin-left: 120px;
+  border: solid 1px black;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.timelane-progs-wrapper .timelane .timelane-values {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 80px;
+  color: aquamarine;
+  height: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 14px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  border: dotted 1px black;
+}
+
+.timelane-progs-wrapper .prog-lane-wrapper {
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1920px;
+  height: 931px;
+  position: relative;
+  background-color: red;
+  top: 100px;
+  left: 120px;
+}
+
+.timelane-progs-wrapper .prog-lane-wrapper .prog-lane {
+  width: 100%;
+  background-color: blue;
+  display: table-row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 93px;
+  border: solid 1px black;
+  border-radius: 1px;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+
+.timelane-progs-wrapper .prog-lane-wrapper .prog-lane .prog {
+  position: absolute;
+  border: inherit;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-color: khaki;
+  display: table-cell;
+  height: 93px;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.channel-col {
+  z-index: 20;
+  top: 50px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 971px;
+  width: 120px;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.channel-col .channel-col__name {
+  background: -webkit-gradient(linear, left top, left bottom, from(#5c1c64), to(#a1a3b8));
+  background: linear-gradient(#5c1c64, #a1a3b8);
+  text-align: center;
+  border: solid 1px #030303;
+  font-size: 18px;
+  min-height: 50px;
+  height: 93px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.channel-col .span-number {
+  margin-left: 10px;
+  font-size: 20px;
+  color: chartreuse;
+  text-shadow: 1px 2px 1px #03030c;
+}
+
+.channel-col .span-number,
+.channel-col .span-name {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 26%;
+}
+
+.channel-col .channel-col-title {
+  height: 40px;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 2em;
+}
+
+.channel-col .channel-col-title > span {
+  margin-top: 0%;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    height: 80px;
+    position: fixed;
+  }
+  .menu .menu-button {
+    font-size: 18px;
+    margin: auto 5px;
+  }
+  .channel-col {
+    top: 80px;
+  }
+  .timelane-progs-wrapper .prog-lane-wrapper {
+    top: 129px;
+  }
+  .timelane-progs-wrapper .timelane {
+    top: 80px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 544px) {
+  .menu {
+    height: 50px;
+    position: fixed;
+  }
+  .menu .menu-button {
+    font-size: 10px;
+    font-weight: bold;
+    margin: auto 3px;
+  }
+  .timelane-progs-wrapper .prog-lane-wrapper {
+    left: 43px;
+    top: 99px;
+  }
+  .timelane-progs-wrapper .timelane {
+    left: -77px;
+    top: 50px;
+  }
+  .channel-col {
+    width: 43px;
+    top: 50px;
+  }
+  .channel-col .span-name {
+    display: none;
+  }
+  .channel-col .span-number {
+    margin-top: 80%;
+    margin-right: 10%;
+  }
+}

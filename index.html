@@ -1,160 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1,shrink-to-fit=no"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
     />
-
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <title>More Code for the Code God!</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="body">
-    
-
-    <nav
-      id="menu"
-      class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md navbar-light bg-primary visible"
-    >
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item visible menu-button">
-              <a
-                id="now-button"
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                >Now</a
-              >
-            </li>
-            <li class="nav-item visible menu-button">
-              <a
-                id="now-button"
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                >Monday</a
-              >
-            </li>
-            <li class="nav-item visible menu-button">
-              <a
-                id="now-button"
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                >Tuesday</a
-              >
-            </li>
-            <li class="nav-item visible menu-button">
-              <a
-                id="now-button"
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                >Wednesday</a
-              >
-            </li>
-            <li class="nav-item visible menu-button">
-              <a
-                id="now-button"
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                >Thursday</a
-              >
-            </li>
-            <li class="nav-item visible menu-button">
-              <a
-                id="now-button"
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                >Friday</a
-              >
-            </li>
-            <li class="nav-item visible menu-button">
-              <a
-                id="now-button"
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                >Saturday</a
-              >
-            </li>
-            <li class="nav-item visible menu-button">
-              <a
-                id="now-button"
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                >Sunday</a
-              >
-            </li>
-            
-
-          </ul>
-        </div>
+  <body>
+    <div class="menu">
+      <button class="menu-button">Monday</button>
+      <button class="menu-button">Tuesday</button>
+      <button class="menu-button">Wednesday</button>
+      <button class="menu-button">Thursday</button>
+      <button class="menu-button">Friday</button>
+      <button class="menu-button">Saturday</button>
+      <button class="menu-button">Sunday</button>
+      <button class="menu-button now-button" id="now-button">Now</button>
+    </div>
+    <div class="timelane-progs-wrapper">
+      <div class="timelane">
+        <div class="timelane-values">00:00</div>
+        <div class="timelane-values">01:00</div>
+        <div class="timelane-values">02:00</div>
+        <div class="timelane-values">03:00</div>
+        <div class="timelane-values">04:00</div>
+        <div class="timelane-values">05:00</div>
+        <div class="timelane-values">06:00</div>
+        <div class="timelane-values">07:00</div>
+        <div class="timelane-values">08:00</div>
+        <div class="timelane-values">09:00</div>
+        <div class="timelane-values">10:00</div>
+        <div class="timelane-values">11:00</div>
+        <div class="timelane-values">12:00</div>
+        <div class="timelane-values">13:00</div>
+        <div class="timelane-values">14:00</div>
+        <div class="timelane-values">15:00</div>
+        <div class="timelane-values">16:00</div>
+        <div class="timelane-values">17:00</div>
+        <div class="timelane-values">18:00</div>
+        <div class="timelane-values">19:00</div>
+        <div class="timelane-values">20:00</div>
+        <div class="timelane-values">21:00</div>
+        <div class="timelane-values">22:00</div>
+        <div class="timelane-values">23:00</div>
       </div>
-    </nav>
 
-    <div id="wrapper-timelane-progs-channels">
-      <div id="wrapper-timelane-progs">
-        <div id="time-lane-part1" class="time-lane visible">
-          <div id="channel-title" class="time-lane-hour">Channel Title</div>
-          <div class="time-lane-hour">00:00</div>
-          <div class="time-lane-hour">01:00</div>
-          <div class="time-lane-hour">02:00</div>
-          <div class="time-lane-hour">03:00</div>
-          <div class="time-lane-hour">04:00</div>
-          <div class="time-lane-hour">05:00</div>
-          <div class="time-lane-hour">06:00</div>
-          <div class="time-lane-hour">07:00</div>
-          <div class="time-lane-hour">08:00</div>
-          <div class="time-lane-hour">09:00</div>
-          <div class="time-lane-hour">10:00</div>
-          <div class="time-lane-hour">11:00</div>
-          <div class="time-lane-hour">12:00</div>
-          <div class="time-lane-hour">13:00</div>
-          <div class="time-lane-hour">14:00</div>
-          <div class="time-lane-hour">15:00</div>
-          <div class="time-lane-hour">16:00</div>
-          <div class="time-lane-hour">17:00</div>
-          <div class="time-lane-hour">18:00</div>
-          <div class="time-lane-hour">19:00</div>
-          <div class="time-lane-hour">20:00</div>
-          <div class="time-lane-hour">21:00</div>
-          <div class="time-lane-hour">22:00</div>
-          <div class="time-lane-hour">23:00</div>
-        </div>
-
-        <div id="channel-0" class="programms-row all-progs"></div>
-        <div id="channel-1" class="programms-row all-progs"></div>
-        <div id="channel-2" class="programms-row all-progs"></div>
-        <div id="channel-3" class="programms-row all-progs"></div>
-        <div id="channel-4" class="programms-row all-progs"></div>
-        <div id="channel-5" class="programms-row all-progs"></div>
-        <div id="channel-6" class="programms-row all-progs"></div>
-        <div id="channel-7" class="programms-row all-progs"></div>
-        <div id="channel-8" class="programms-row all-progs"></div>
-        <div id="channel-9" class="programms-row all-progs"></div>
-        
-      </div>
-      <div id="channel-column" class="channel-column">
-        <div id="am" class="channel-column-name">channel</div>
+      <div class="prog-lane-wrapper">
+        <div class="prog-lane" id="prog-lane1"></div>
+        <div class="prog-lane" id="prog-lane2"></div>
+        <div class="prog-lane" id="prog-lane3"></div>
+        <div class="prog-lane" id="prog-lane4"></div>
+        <div class="prog-lane" id="prog-lane5"></div>
+        <div class="prog-lane" id="prog-lane6"></div>
+        <div class="prog-lane" id="prog-lane7"></div>
+        <div class="prog-lane" id="prog-lane8"></div>
+        <div class="prog-lane" id="prog-lane9"></div>
+        <div class="prog-lane" id="prog-lane10"></div>
       </div>
     </div>
-    <script src="js/jquery-3.5.1.min.js"></script>
 
-    <script src="js/bootstrap.min.js"></script>
+    <div class="channel-col">
+      <div class="channel-col__name channel-col-title">
+        <span class="span-name">Channel</span
+        ><span class="span-number">Title</span>
+      </div>
+      <div class="channels">
+        <div class="channel-col__name">
+          <span class="span-name">Channel</span
+          ><span class="span-number" id="channel1"></span>
+        </div>
+        <div class="channel-col__name">
+          <span class="span-name">Channel</span
+          ><span class="span-number" id="channel2"></span>
+        </div>
+        <div class="channel-col__name">
+          <span class="span-name">Channel</span
+          ><span class="span-number" id="channel3"></span>
+        </div>
+        <div class="channel-col__name">
+          <span class="span-name">Channel</span
+          ><span class="span-number" id="channel4"></span>
+        </div>
+        <div class="channel-col__name">
+          <span class="span-name">Channel</span
+          ><span class="span-number" id="channel5"></span>
+        </div>
+        <div class="channel-col__name">
+          <span class="span-name">Channel</span
+          ><span class="span-number" id="channel6"></span>
+        </div>
+        <div class="channel-col__name">
+          <span class="span-name">Channel</span
+          ><span class="span-number" id="channel7"></span>
+        </div>
+        <div class="channel-col__name">
+          <span class="span-name">Channel</span
+          ><span class="span-number" id="channel8"></span>
+        </div>
+        <div class="channel-col__name">
+          <span class="span-name">Channel</span
+          ><span class="span-number" id="channel9"></span>
+        </div>
+        <div class="channel-col__name">
+          <span class="span-name">Channel</span
+          ><span class="span-number" id="channel10"></span>
+        </div>
+      </div>
+    </div>
+
     <script src="./src/Events.js"></script>
     <script src="./src/Store.js"></script>
     <script src="./src/View.js"></script>
-
     <script src="./src/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,213 @@
+@import "nullstyle.scss";
+//templates,vars
+$width_timelane: 120%;
+$channel_height: 971px;
+$channel-title-height: 40px;
+$channel-name-height: 93px;
+
+$clock_width: 80px;
+$timelane_progs_width: $clock_width * 24;
+$channel_col_width: 120px;
+%font {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  text-shadow: 1px 1px 1px rgb(137, 137, 207);
+}
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+//header menu
+.menu {
+  position: fixed;
+  z-index: 21;
+  height: 50px;
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  background-color: aquamarine;
+  justify-content: flex-start;
+  .menu-button {
+    margin: auto 20px;
+    position: flex-inline;
+    justify-content: center;
+    border-radius: 10%;
+    margin: auto 20px;
+    @extend %font;
+    background-color: aquamarine;
+  }
+  .now-button {
+    color: red;
+    font-size: 25px;
+  }
+}
+//time lane + progs
+.timelane-progs-wrapper {
+  position: absolute;
+  .timelane {
+    position: fixed;
+    z-index: 4;
+    width: $timelane_progs_width;
+    opacity: 1;
+    height: 50px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    top: 50px;
+    margin-left: 120px;
+    border: solid 1px black;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-wrap: nowrap;
+
+    .timelane-values {
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: black;
+      display: inline-flex;
+      width: $clock_width;
+      color: aquamarine;
+      height: 100%;
+      align-self: center;
+      text-align: center;
+      justify-content: center;
+      padding-top: 14px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 20px;
+      border: dotted 1px black;
+    }
+  }
+  .prog-lane-wrapper {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    width: $timelane_progs_width;
+    height: ($channel_height)- $channel-title-height;
+    position: relative;
+
+    background-color: red;
+    top: 100px;
+    left: 120px;
+    .prog-lane {
+      width: 100%;
+      background-color: blue;
+      display: table-row;
+      flex-direction: row;
+      height: $channel-name-height;
+      border: solid 1px black;
+      border-radius: 1px;
+      justify-content: unset;
+      .prog {
+        position: absolute;
+        border: inherit;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background-color: khaki;
+        display: table-cell;
+        height: $channel-name-height;
+        overflow: hidden;
+
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.channel-col {
+  z-index: 20;
+  top: 50px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+
+  height: $channel_height;
+  width: $channel_col_width;
+  align-items: left;
+
+  .channel-col__name {
+    background: linear-gradient(#5c1c64, #a1a3b8);
+    text-align: center;
+    border: solid 1px rgb(3, 3, 3);
+    font-size: 18px;
+    min-height: 50px;
+    height: $channel-name-height;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .span-number {
+    margin-left: 10px;
+    font-size: 20px;
+    color: chartreuse;
+    text-shadow: 1px 2px 1px rgb(3, 3, 12);
+  }
+  .span-number,
+  .span-name {
+    display: inline-flex;
+    margin-top: 26%;
+  }
+  .channel-col-title {
+    height: 40px;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 2em;
+    > span {
+      margin-top: 0%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    height: 80px;
+    position: fixed;
+    .menu-button {
+      font-size: 18px;
+      margin: auto 5px;
+    }
+  }
+  .channel-col {
+    top: 80px;
+  }
+  .timelane-progs-wrapper {
+    .prog-lane-wrapper {
+      top: 129px;
+    }
+    .timelane {
+      top: 80px;
+      left: 0px;
+    }
+  }
+}
+@media (max-width: 544px) {
+  .menu {
+    height: 50px;
+    position: fixed;
+    .menu-button {
+      font-size: 10px;
+      font-weight: bold;
+      margin: auto 3px;
+    }
+  }
+  .timelane-progs-wrapper {
+    .prog-lane-wrapper {
+      left: 43px;
+      top: 99px;
+    }
+    .timelane {
+      left: -77px;
+      top: 50px;
+    }
+  }
+  .channel-col {
+    width: 43px;
+    top: 50px;
+
+    .span-name {
+      display: none;
+    }
+    .span-number {
+      margin-top: 80%;
+      margin-right: 10%;
+    }
+  }
+}
